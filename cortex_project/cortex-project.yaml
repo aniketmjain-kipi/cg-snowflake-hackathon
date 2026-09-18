@@ -1,0 +1,12 @@
+version: 1
+artifacts:
+  - path: INSURANCE_SEMANTIC_MODEL.sv.yaml
+    type: semantic_view
+    targets:
+      default:
+        object: INSURANCE_AI_HUB.ANALYTICS.INSURANCE_SEMANTIC_MODEL
+  - path: CLAIMS_FRAUD_TRIAGE_AGENT.agent.yaml
+    type: cortex_agent
+    targets:
+      default:
+        object: INSURANCE_AI_HUB.ANALYTICS.CLAIMS_FRAUD_TRIAGE_AGENT
